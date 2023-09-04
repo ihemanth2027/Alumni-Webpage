@@ -1,0 +1,89 @@
+::-webkit-scrollbar {
+	display: none;
+}
+.registrationForm {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #bcd4f8;
+background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	padding-top: 10rem;
+}
+.registrationContainer {
+	background-color: aliceblue;
+	position: relative;
+	padding: 2rem;
+	margin: 1rem;
+	flex-wrap: wrap;
+	width: 100%;
+	border-top-left-radius: 10% 50%;
+	border-bottom-left-radius: 10% 50%;
+}
+.formBg {
+	background-color: #000249;
+	position: relative;
+	padding: 2rem;
+	padding-right: 3.5rem;
+	width: 70%;
+	margin-top: 32%;
+	margin-bottom: 5rem;
+}
+.closeBtn {
+	position: absolute;
+	width: 4%;
+	right: 3rem;
+	color: aliceblue;
+	background-color: #dd1717;
+	border: none;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+.registrationContainer h2 {
+	color: #0f4392;
+	text-align: center;
+}
+
+.uploadPicBtn {
+	background-color: #000249;
+	color: white;
+}
+.uploadPicBtn:hover {
+	background-color: #000249;
+	color: white;
+}
+
+.formContent,
+option {
+	padding: 1rem;
+	color: #000000;
+}
+input,
+textarea,
+select,
+button {
+	margin-top: 3px;
+}
+.form-group {
+	margin: 14px;
+}
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+	.formBg{
+        margin-top: 150%;
+        margin-bottom: 0;
+        width:100%;
+        height: fit-content;
+	}
+}

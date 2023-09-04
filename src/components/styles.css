@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap");
+
+@import url('https://fonts.cdnfonts.com/css/cg-omega');
+
+                
+body {
+	font-family: "Nunito Sans", sans-serif;
+}
+.header{
+	font-family: 'CG Omega', sans-serif;                                        
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* Header.css */
+.header {
+	display: flex;
+	padding: 0.5rem;
+	position: relative;
+	background-color: #0f4392;
+}
+.logoHeading {
+	color: #fff;
+	font-size: 3rem;
+	margin: 0;
+}
+.logoSubHeading {
+	color: #bcd4f8;
+	font-size: larger;
+	position: absolute;
+	right: 12px;
+}
+.cvrLogo {
+	width: 110px;
+	height: 110px;
+	margin-top: 0.8%;
+}
+
+.logoName {
+	padding: 10px;
+	padding-top: 20px;
+	position: relative;
+}
+.navBarContainer {
+	background-color: #bcd4f8;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.navbar {
+	padding: 0;
+}
+.nav-item {
+	font-size: medium;
+	margin-right: 3rem;
+}
+.nav-link:hover {
+	color: #dd1717;
+}
+
+.nav-link,
+.dropdown-item {
+	color: black;
+}
+.dropdown-item:active {
+	background-color: #dd1717;
+}
+.togglertBtn{
+	margin: 2px;
+}
+.togglertBtn:focus{
+	box-shadow: none;
+}
+.officeOfAlumniAffairs{
+	position: absolute;
+	right: 10rex;
+	color: white;
+    top: 30%;
+	/* padding: 80%; */
+}
+@media screen and (max-width : 987px) {
+	.nav-item{
+		margin-left: 1rem;
+	}
+	.cvrLogo{
+		margin-left: 0;
+	}
+	
+}
+@media screen and (max-width : 1460px){
+	.officeOfAlumniAffairs{
+		display: none;
+	}
+}
+/* -------------------------------------------------------------------------------------- */
+/* Footer.css */
+
+.footer {
+	color: #949494;
+	background-color: #2e3639;
+	margin: 0;
+	padding: 0.5rem;
+	font-size: small;
+	text-align: center;
+}
+.footer p {
+	margin: 0;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* MainBody.css */
+
+.welcomeContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.welcomePic {
+	position: relative;
+	width: 100%;
+	min-height: 76vh;
+	background-image: url("D:\Alumni Website\RaghavaSirAlumniWebsite-main\public\images\alumnibg.jpg");
+	background-size: 100% 77vh;
+}
+#welcomeMsg1 {
+	color: #dd1717;
+	font-weight: 600;
+}
+.welcomeMsg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: fit-content;
+	height: fit-content;
+	color: #0f4392;
+}
+#welcomeMsg2 {
+	font-size: 4rem;
+	padding: 10px;
+	font-weight: 900;
+}
+.contents {
+	padding: 3rem 4rem 0;
+}
+.contentHeading {
+	color: #dd1717;
+}
+.mainBodyContentsDiv {
+	margin-bottom: 4rem;
+}
+.gradient {
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F4392", endColorstr="#000249", GradientType=1 );
+	padding: 3rem;
+	text-align: center;
+	color: #ffffff;
+}
+.gradientContent {
+	padding: 1.5rem 10rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* MoUs.css */
+
+.moUs {
+	margin-bottom: 3rem;
+}
+
+.mousPicMain {
+	width: 90%;
+	height: 32rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5px;
+}
+
+.moUsContents {
+	display: flex;
+	margin-top: 3rem;
+	position: relative;
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	background-color: #bcd4f8;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.moUsContents h2 {
+	color: #dd1717;
+}
+.moUsDescriptionRight,
+.moUsDescriptionLeft {
+	padding: 2rem;
+}
+.moUsContents p {
+	margin-top: 1rem;
+}
+.moUsImageContainer {
+	max-width: 380px;
+	flex: 0 0 380px;
+	padding: 1rem;
+}
+.moUsImage {
+	max-width: 100%;
+	height: 324px;
+}
+@media screen and (max-width: 998px) {
+	.moUsImageContainer {
+		max-width: 100%;
+	}
+	.moUsImage {
+		width: 100%;
+	}
+	.moUsContents {
+		flex-direction: column;
+	}
+}
+/* -------------------------------------------------------------------------------------- */
+/* Exhibits.css */
+
+.exhibits {
+	text-align: center;
+}
+.exhibitsImage {
+	width: 34rem;
+	height: 30rem;
+}
+.exhibitBox {
+	border: 3px solid #bcd4f8;
+	width: fit-content;
+	margin: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.exhibitBox img {
+	padding: 1rem;
+}
+.exhibitDiv {
+	margin: 3.5rem 15%;
+}
+.alumniCarousel {
+	display: flex;
+	padding: 1rem;
+	margin-left: 5%;
+}
+.alumniCarousel h2 {
+	color: #dd1717;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 30%;
+	margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+hr {
+	border: 2px solid #454545;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* ProductExhibits.css */
+.slide {
+	position: relative;
+	padding: 2rem;
+	display: block;
+	margin: 1.3rem;
+	border: 1px solid #ffffff;
+}
+.slide div {
+	display: flex;
+}
+.sliderOuter {
+	width: 60%;
+	height: 14rem;
+	background-color: #bcd4f8;
+	overflow: hidden;
+}
+.sliderInner {
+	position: relative;
+	animation: imageUp 20s ease-in-out infinite;
+}
+@keyframes imageUp {
+	0%,
+	10%,
+	100% {
+		transform: translateY(0);
+	}
+	15%,
+	25% {
+		transform: translateY(-17%);
+	}
+	35%,
+	45% {
+		transform: translateY(-34%);
+	}
+	55%,
+	65% {
+		transform: translateY(-51%);
+	}
+	75%,
+	85% {
+		transform: translateY(-68%);
+	}
+	90%,
+	99.99% {
+		transform: translateY(-85%);
+	}
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* OurTeam.css */
+.teamContainer {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.teamContainer .row{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-items: left;
+}
+.teamCard {
+	padding: 10px;
+	width: 28%;
+	background-color: #bcd4f8;
+	margin: 1rem 1.5rem;
+	text-align: center;
+	border-radius: 1rem;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.teamCard img {
+	width: 160px;
+	height: 150px;
+	margin: 1rem;
+	border: 1px solid #000249;
+}
+.teamMember h4 {
+	color: #dd1717;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* Overseas.css */
+
+.groupImage {
+	width: 40rem;
+	height: 26rem;
+}
+.overseasCard {
+	display: flex;
+}
+
+.leftOverseasImage,
+.rightOverseasImage {
+	width: 17rem;
+	height: 26rem;
+}
+.leftOverseasCard,
+.rightOverseasCard {
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
+	);
+}
+.leftOverseasImage {
+	margin-top: 10px;
+}
+
+.leftOverseasCard {
+	padding: 1rem 2rem;
+	margin: 2rem;
+}
+.leftOverseasCard .place {
+	color: #ffffff;
+}
+.leftOverseasCard .date {
+	color: #ffffff;
+}
+.middleOverseasCard {
+	margin: 3rem;
+}
+.middleOverseasCard img {
+	padding-top: 10px;
+}
+.overseas h2 {
+	background-color: #000249;
+	color: #ffffff;
+	padding: 0.5rem;
+	text-align: center;
+}
+.middleOverseasCard h3 {
+	color: #dd1717;
+}
+
+.rightOverseasCard {
+	padding: 3rem 2rem;
+	margin: 2rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* WallOfFame.css */
+
+.wof h1 {
+	text-align: center;
+	color: #dd1717;
+	padding-top: 2rem;
+}
+.wallOfFameCard {
+	display: flex;
+	position: relative;
+	background: #bcd4f8;
+	max-width: 80%;
+	margin: 2rem 12rem;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.wofImage {
+	position: relative;
+	width: 12rem;
+	height: 12rem;
+	border-radius: 10rem;
+	margin-left: 3rem;
+	border: 1px solid #000249;
+}
+.wofCardInfo {
+	margin: 1.5rem 2rem;
+}
+.topScrollBtn{
+	position: fixed;
+	right: 20px;
+	bottom: 45px;
+	font-size: 70px;
+	border-radius: 20px;
+	border: none;
+    color:#dd1717;
+}
+@media screen and (max-width: 960px) {
+	.wallOfFameCard {
+		flex-direction: column;
+		margin: 2rem;
+	}
+	.wofImage {
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+		margin-left: 5rem;
+	}
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* JoinUs.css */
+.joinUs {
+	display: flex;
+	padding: 2rem;
+	margin: 1rem 10rem;
+}
+.joinUs div {
+	padding: 4rem;
+}
+.quote {
+	color: #0f4392;
+	font-size: 5rem;
+}
+.joinUsAlumniImg {
+	height: 25rem;
+	width: 18rem;
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
+	);
+	border-top-left-radius: 5rem;
+	border-bottom-right-radius: 5rem;
+}
+.register {
+	color: #000000;
+}
+.register button {
+	margin-top: 10px;
+	padding: 0.5rem;
+	background-color: #0f4392;
+	color: #ffffff;
+	font-size: larger;
+	border: none;
+	border-radius: 10px;
+	width: 10rem;
+}
+@media screen and (max-width:1212px) {
+	.joinUs{
+		margin:1rem;
+	}
+	.joinUsAlumniImg{
+		height: 20rem;
+		width: 14rem;
+	}
+}
+@media screen and (max-width:800px) {
+	.joinUsAlumniImg{
+		display: none;
+	}
+    .joinUs div{
+		padding-right: 0;
+		padding-left: 1rem;
+	}
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* AlumniAwards */
+.alumniAwards h1,
+.sponser {
+	background-color: #000249;
+	color: #ffffff;
+	padding: 0.8rem;
+	text-align: center;
+	margin: 0.1rem 8rem;
+}
+.alumniAwardsInfo {
+	padding: 0.5rem 2rem;
+	margin: 0.2rem 8rem;
+	background-color: #bcd4f8;
+}
+.alumniAwardsCarousel img {
+	width: 70%;
+	height: 35rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* OnCampus */
+.onCampusHeading {
+	padding: 13rem 3rem;
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F4392", endColorstr="#000249", GradientType=1 );
+	color: #ffffff;
+}
+
+.onCampusCarousel img {
+	width: 70%;
+	height: 35rem;
+}
+.onCampusCarousel {
+	margin: 1rem 3rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* BoUS_Iqac */
+
+.bousIqacHead,
+.techTalksHead,
+.fdpHead {
+	color: #dd1717;
+	text-align: center;
+	padding: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* Table */
+
+table {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+th,
+td {
+	padding: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+tr:nth-child(odd) {
+	background-color: #cddffa;
+}
+tr:nth-child(even) {
+	background-color: #bcd4f8;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* AlumniGallery */
+.alumniGalleryCard img {
+	width: 85%;
+	height: 16rem;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.alumniGallery .row {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* .alumniGalleryCard:hover{
+	background-color: #dd1717;
+	color: #ffffff;
+} */
+.alumniGalleryCard {
+	padding: 1rem;
+	text-align: center;
+}
+.alumniGalleryCard p {
+	margin-top: 0.4rem;
+	font-size: x-large;
+	color: #dd1717;
+}
+.alumniGalleryHead {
+	text-align: center;
+	background-color: #000249;
+	color: #ffffff;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 2rem;
+}
+@media screen and (max-width: 574px) {
+	.alumniGalleryCard {
+		width: 100%;
+	}
+	.alumniGalleryCard img {
+		width: max-content;
+	}
+}
+/* -------------------------------------------------------------------------------------- */
+/* .campusDrives */
+.campusDrives {
+	display: block;
+	margin: 2rem auto;
+	width: 75%;
+}
+
+/* Video.css */
+.videoContainer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.video {
+	width: 400px;
+	height: 270px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	margin-top: 1rem;
+}
+.videoParent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
